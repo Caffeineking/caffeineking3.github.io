@@ -1,0 +1,170 @@
+<!-- HW takeaways!!
+
+* eg. On `xs` and `sm` screens, content should take up the entire screen. On `md` and larger screens, you should have some margins on the left and right side of the screen. Check out various sites on your mobile device versus your computer to see this in action!
+
+* Responsive images
+
+Using Bootstrap, make a sticky footer and use sub-rows and sub-columns on your portfolio site _(Hint: Check out the Bootstrap documentation)_
+
+3. Your Bootstrap solution should minimize use of media queries.
+
+4. Deploy your new Bootstrap-powered portfolio to GitHub Pages.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <!-- media queries goes into the css style sheet -->
+
+<style>
+.bgBlack{
+    background-color: black;
+}
+.textWhite{
+    color: white;
+}
+.bgWhite{
+    background-color:white;
+}
+.textBlack{
+    color:black;
+}
+.footerMargin{
+    margin-top: 10px;
+}
+
+    @media screen and (max-width: 1000px) { 
+    .jumbotron{
+        text-align: center;
+        padding:1rem 0 0 0;
+        }
+    }
+
+</style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bgBlack">
+        <img src="https://static.wixstatic.com/media/166aba_ccaadbb2218cc6cef3a7a8e6a009f8d7.png/v1/fill/w_180,h_180,al_c,usm_0.66_1.00_0.01/166aba_ccaadbb2218cc6cef3a7a8e6a009f8d7.png" alt=santos>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-secondary">Home</button>
+            <button type="button" class="btn btn-secondary">About</button>
+            <button type="button" class="btn btn-secondary">Portfolio</button>
+            <button type="button" class="btn btn-secondary">Contact Me</button>
+          </div>
+                
+            </ul>
+        
+        </div>
+    </nav>
+
+    <!-- container -->
+
+    <div class="container">
+        <!-- first row-->
+        <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                  <h1 class="display-3 bgBlack textWhite">Johnn Santos</h1>
+                  <p class="lead">Web Development | Marketing | Business Solutions</p>
+                </div>
+              </div>
+        <!-- <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <h1> Welcome to my awesome website!</h1>
+            </div>
+        </div>
+        </div> -->
+        <!-- second row-->
+         <!-- <div class="row">
+                <div class="col-md-4">
+                <img src="https://www.digiorno.com/Content/Images/products/11199-pizza-close.jpg" class="img-thumbnail img-thumbnail">
+                </div>
+                <div class="col-md-8 ">
+                    this is a pizza!
+                </div>
+        </div>
+         -->
+        <!-- <div class="row">
+                <div class="col-md-4">
+                <img src="https://www.digiorno.com/Content/Images/products/11199-pizza-close.jpg" class="img-thumbnail img-thumbnail">
+                </div>
+
+                <div class="col-md-8">
+                    this is a pizza!
+                </div>
+        </div> -->
+        <!-- fourth row-->
+        <!-- <div class="row">
+                <div class="col-md-4">
+                <img src="https://www.digiorno.com/Content/Images/products/11199-pizza-close.jpg" class="img-thumbnail img-thumbnail">
+                </div>
+
+                <div class="col-md-8">
+                    this is a pizza!
+                </div>
+        </div> -->
+
+        
+        <div class="row">
+                <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="http://raoulbianchetti.com/wp-content/uploads/2018/01/CIGIonline_ipsos-slider.jpeg" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title">Web Development</h5>
+                                  <p class="card-text">Customized websites made to capture the viewer</p>
+                                  
+                                </div>
+                              </div>
+                </div>
+
+                <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyyE6UF8UKcMTnFQ0ctv63RVooxadOhl7t-56aDbHmWO-l-bhz" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title">Marketing</h5>
+                                  <p class="card-text">Build marketing campaign and target your audience</p>
+                             
+                                </div>
+                              </div>
+                </div>
+                <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="http://mkrad.com/wp-content/uploads/2018/01/shutterstock_205491556.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title">Business Solutions</h5>
+                                  <p class="card-text">Cloud services, accounting and other outsoureable solutions.</p>
+                                
+                                </div>
+                              </div>
+                         </div>
+
+                </div> 
+                <div class="row">
+                <div class="col-md-12">
+                        <footer>
+                        <div class="card footerMargin bgBlack textWhite fixed-bottom">
+                             Footer
+                        </div>
+                         </footer>
+                </div>
+        <section>
+
+        </section>
+      
+    
+</body>
+
+</html>
